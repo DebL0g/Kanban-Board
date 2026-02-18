@@ -5,23 +5,43 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="container">
+         <div class="container">
             <h1>Epic Kanban Board</h1>
             <div class="board">
                 <div class="list" id="list1">
-                    <h2>To-Do</h1>
-                    <div class="card" draggable="true" id="card1">Clean room</div>
-                    <div class="card" draggable="true" id="card2">Do Homework</div>
+                    <h2>To-Do</h2>
+                    <div class="cards-container">
+                        <div class="card" draggable="true" id="card1">Do Homework</div>
+                        <div class="card" draggable="true" id="card2">Clean room</div>
+                    </div>
+                    <div class="add-task-area">
+                        <input class="add-task-input" type="text" placeholder="Enter task name..." />
+                        <button class="confirm-btn">✓ Add Task</button>
+                        <button class="add-task-btn">+ Add a card</button>
+                    </div>
                 </div>
                 <div class="list" id="list2">
-                    <h2>In Progress</h1>
-                    <div class="card" draggable="true" id="card3">Code</div>
-
+                    <h2>In Progress</h2>
+                    <div class="cards-container">
+                        <div class="card" draggable="true" id="card3">Code</div>
+                    </div>
+                    <div class="add-task-area">
+                        <input class="add-task-input" type="text" placeholder="Enter task name..." />
+                        <button class="confirm-btn">✓ Add Task</button>
+                        <button class="add-task-btn">+ Add a card</button>
+                    </div>
                 </div>
                 <div class="list" id="list3">
-                    <h2>Done</h1>
+                    <h2>Done</h2>
+                    <div class="cards-container"></div>
+                    <div class="add-task-area">
+                        <input class="add-task-input" type="text" placeholder="Enter task name..." />
+                        <button class="confirm-btn">✓ Add Task</button>
+                        <button class="add-task-btn">+ Add a card</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="board.js"></script>
     </body>
 </html>
