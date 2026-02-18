@@ -76,7 +76,7 @@ h1{
 }
 
 .list {
-    /* add these two lines to your existing .list rule */
+    
     display: flex;
     flex-direction: column;
 }
